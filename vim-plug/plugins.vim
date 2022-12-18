@@ -14,8 +14,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'scrooloose/NERDTree'
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
-    " Autocomplete (Intellisense)
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Colorizer (show colors)
     Plug 'norcalli/nvim-colorizer.lua'
     " Color parentheses
@@ -26,6 +24,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'justinmk/vim-sneak' 
     " Better f and t navigation
     Plug 'unblevable/quick-scope'
+   
+
+
+    " Autocomplete (Intellisense)
+    " [old version -- see lsp]
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " lsp - support for language support
+    Plug 'neovim/nvim-lspconfig'
+    " Java language server support
+    " This doesn't work. Also, the config is removed from init.
+    Plug 'mfussenegger/nvim-jdtls'
+
+
 
     " Themes
     Plug 'joshdick/onedark.vim'    

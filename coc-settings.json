@@ -5,6 +5,9 @@
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
 
+  // C config
+  "clangd.inlayHints.enable": false,
+
   "snippets.ultisnips.directories":
   [
     "UltiSnips",
